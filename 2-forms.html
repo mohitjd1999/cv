@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+       <div>
+        <label for="name"> Name (only 4 to 8 characters allowed)</label> <br>
+        <input type="text" id="name" name="name" required
+               minlength="4" maxlength="8" size="10">
+        <input type="button" value="Submit">  
+      </div><br>
+      <div>
+        <label for="Date">Date</label>
+        <input type="date" min="2000-01-01" max="2025-01-01">
+      </div><br>
+      <div>
+        <label for="avatar">Choose a picture</label><br>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      </div>
+      <div>
+        <p>Gender</p>
+        <input type="radio" id="male" name="male" value="male" checked>
+        <label for="male">Male</label><br>
+      </div>
+      <div>
+        <input type="radio" id="female" name="female" value="female" checked>
+        <label for="female">Female</label><br>
+      </div>
+      <div>
+        <p>Audio Settings</p>
+        <input type="range" id="volume" name="volume" min="0" max="11" >
+        <label for="volume">Volume</label><br>
+      </div>
+      <div>
+        <input type="range" id="cowbell" name="cowbell"  min="0" max="100" value="90" step="10">
+        <label for="cowbell">Cowbell</label><br>
+      </div>
+    </form>
+</body>
+</html>
